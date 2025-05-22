@@ -16,7 +16,7 @@
 
 ## Présentation
 
-Ce projet contient plusieurs scripts principalement conçus pour être exécutés sur des machines Linux. Ils permettent d’automatiser la sauvegarde de bases de données, organiser ces sauvegardes selon une stratégie de rotation "Fils/Père/Grand-Père", et envoyer des notifications par mail en cas d’erreur.
+Ce projet contient plusieurs scripts principalement conçus pour être exécutés sur des machines Linux. Ils permettent d’automatiser la sauvegarde de bases de données, organiser ces sauvegardes selon une stratégie de rotation "Fils/Père/Grand-Père", et envoyer des notifications par mail en cas d’erreur dans la base de donnée.
 
 ---
 

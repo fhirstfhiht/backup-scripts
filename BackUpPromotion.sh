@@ -23,6 +23,31 @@ for file in "$ENFANT"/*.tar.bz2; do
     fi
 done
 
+#INITIALISATION DU FICHIER A SUPPRIMMER PAR LA SUITE 
+#c'est un boucle qui va recuperer toutt les 4 fichier pour faire en sorte que ceux ci 
+#soient considerer comme un mois 
+
+#supprimable (a titre d'info)
+#il regarde seulement tout les fichiers qui sont dans le repertoire pere
+#et les trie en fonction des demande
+FILES_IN_PERE=$(ls -lt "$PERE"/*.tar.bz2)
+for file in $FILES_IN_PERE; do
+    echo "$file"
+done
+
+count = 0
+for file in $FILES_IN_PERE; do
+    count=$((count +1))
+
+    if [ $((count % 4)) -eq 0 ]; then
+        FILE_PATH=$( echo "$file" | awk '{print $NF}')
+
+        cp "$FILE_PATH" "$GRAND_PARENT/" #changer cp par mv au besoin
+        echo "[INFO] Déplacement de $FILE_PATH vers $GRAND_PARENT" #supprimable a titre d'information
+    fi
+done
+
+
 # Verification de si demain est un nouveau mois
 # Alors le dernier fichier ira de pere -> Grand-pere 
 Mois_du_jour=$(date +"%m")

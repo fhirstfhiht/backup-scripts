@@ -20,6 +20,8 @@ Ce projet contient plusieurs scripts principalement conçus pour être exécuté
 Tout les fichiers present dans les dossier sont des fichier vide et permettent de faire les test.
 En ce qui concerne le fichier BackUpMail il est a tester avec vos propre parametre de votre base de donnée.
 
+Ce projet vise a un besoin d'ergonomie de fichier et de gestion de sauvegarde.
+
 ---
 
 ## Prérequis

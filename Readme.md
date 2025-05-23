@@ -17,6 +17,8 @@
 ## Présentation
 
 Ce projet contient plusieurs scripts principalement conçus pour être exécutés sur des machines Linux. Ils permettent d’automatiser la sauvegarde de bases de données, organiser ces sauvegardes selon une stratégie de rotation "Fils/Père/Grand-Père", et envoyer des notifications par mail en cas d’erreur dans la base de donnée.
+Tout les fichiers present dans les dossier sont des fichier vide et permettent de faire les test.
+En ce qui concerne le fichier BackUpMail il est a tester avec vos propre parametre de votre base de donnée.
 
 ---
 

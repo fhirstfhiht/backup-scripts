@@ -30,6 +30,7 @@ done
 #supprimable (a titre d'info)
 #il regarde seulement tout les fichiers qui sont dans le repertoire pere
 #et les trie en fonction des demande
+
 FILES_IN_PERE=$(ls -lt "$PERE"/*.tar.bz2)
 for file in $FILES_IN_PERE; do
     echo "$file"
